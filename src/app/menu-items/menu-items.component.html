@@ -1,0 +1,11 @@
+<div class="order-container" *ngIf="cat===0">
+    <div class="menu-item" *ngFor="let starter of starters">
+        <img src="{{ starter.imageURL }}" alt="{{ starter.name }}">
+        <div class="text-info">
+            <h2>{{ starter.name }}</h2>
+            <h3>${{ starter.price }}</h3>
+            <h4>{{ starter.calories }} cal</h4>
+            <h4 class="description">{{ starter.description }}</h4>
+        </div>
+    </div>
+</div>

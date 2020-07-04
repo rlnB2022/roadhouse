@@ -1,6 +1,6 @@
 <div class="menu-container">
     <h1>Menu</h1>
     <ul>
-        <li (click)="select(cat)" [ngClass]="{active: isActive(cat)}" *ngFor="let cat of categories">{{ cat }}</li>
+        <li [id]=i (click)="select(cat,i)" [ngClass]="{active: isActive(cat)}" *ngFor="let cat of categories; let i = index">{{ cat }}</li>
     </ul>
 </div>

@@ -1,4 +1,5 @@
 <div class="app-container">
-    <app-menu></app-menu>
+    <app-menu (chosenCategory)="cat=$event"></app-menu>
+    <app-menu-items [cat]="cat"></app-menu-items>
     <app-order></app-order>
 </div>

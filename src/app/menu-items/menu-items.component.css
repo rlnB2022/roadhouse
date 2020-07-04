@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    color: white;
+}
+
+.order-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin: 0 10px;
+}
+
+.text-info {
+    width: 240px;
+    height: 150px;
+}
+
+.menu-item {
+    margin: 0 3px 1px;
+    border: 2px solid transparent;
+}
+
+.menu-item:hover {
+    border: 2px solid #FD6500;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.description {
+    margin-top: 5px;
+}
+
+.highlighted-border {
+    border: 1px solid #FD6500;
+}
+

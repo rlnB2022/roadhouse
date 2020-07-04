@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  @Output() chosenCategory = new EventEmitter();
   selected: any;
   categories: string[];  
-
-  activeMenuItem: number = 0;
 
   constructor() {
     this.categories = [
@@ -31,13 +30,15 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.selected = this.categories[0];
+    this.chosenCategory.emit(0);
   }
 
-  select(item) {
+  select(item: any, index: number) {
     this.selected = item;
+    this.chosenCategory.emit(index);
   }
 
-  isActive(item) {
+  isActive(item): any {
     return this.selected === item;
   }
 
