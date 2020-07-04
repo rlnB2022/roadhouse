@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    background: linear-gradient(black, rgba(0,0,0,.5));
+    padding: 5px;
+    color: white;
+    font-family: 'Arial';
+}
+
+h1 {
+    padding-left: 20px;
+    font-size: 34px;
+}
+
+ul {
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li:hover {
+    background-color: #FD6500;
+}
+
+.active {
+    background-color: #FD6500;
+}
