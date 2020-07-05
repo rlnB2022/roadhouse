@@ -1,3 +1,16 @@
 <div class="order-container">
-
+    <div class="top">
+        <h1>My Order</h1>
+        <div class="top-headings">
+            <p class="heading-item">ITEM</p>
+            <p>QTY</p>
+            <p>PRICE</p>
+        </div>
+        <div class="no-order" *ngIf="noOrder">
+            <p>Your current order is empty.</p>
+            <p>Please call restaurant for orders over $300.00</p>
+            <button class="btn-start-over" (click)="onStartOver()">START OVER</button>
+            <p>...from any Texas Roadhouse location</p>
+        </div>
+    </div>
 </div>

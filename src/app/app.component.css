@@ -6,6 +6,5 @@
 
 .app-container {
     display: flex;
-    width: 50%;
-    margin: 100px auto;
+    width: 75%;
 }
