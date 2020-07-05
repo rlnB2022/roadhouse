@@ -3,9 +3,31 @@
         <img src="{{ starter.imageURL }}" alt="{{ starter.name }}">
         <div class="text-info">
             <h2>{{ starter.name }}</h2>
-            <h3>${{ starter.price }}</h3>
-            <h4>{{ starter.calories }} cal</h4>
+            <h3>{{ starter.price }}</h3>
+            <h4>{{ starter.calories }}</h4>
             <h4 class="description">{{ starter.description }}</h4>
+        </div>
+    </div>
+</div>
+<div class="order-container" *ngIf="cat===1">
+    <div class="menu-item" *ngFor="let salad of salads">
+        <img src="{{ salad.imageURL }}" alt="{{ salad.name }}">
+        <div class="text-info">
+            <h2>{{ salad.name }}</h2>
+            <h3>{{ salad.price }}</h3>
+            <h4>{{ salad.calories }}</h4>
+            <h4 class="description">{{ salad.description }}</h4>
+        </div>
+    </div>
+</div>
+<div class="order-container" *ngIf="cat===2">
+    <div class="menu-item" *ngFor="let handcutsteak of handcutsteaks">
+        <img src="{{ handcutsteak.imageURL }}" alt="{{ handcutsteak.name }}">
+        <div class="text-info">
+            <h2>{{ handcutsteak.name }}</h2>
+            <h3>{{ handcutsteak.price }}</h3>
+            <h4>{{ handcutsteak.calories }}</h4>
+            <h4 class="description">{{ handcutsteak.description }}</h4>
         </div>
     </div>
 </div>

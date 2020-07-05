@@ -7,6 +7,8 @@
 }
 
 .order-container {
+    height: 600px;
+    overflow-y: scroll;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -15,16 +17,27 @@
 
 .text-info {
     width: 240px;
-    height: 150px;
+    height: 140px;
 }
 
 .menu-item {
     margin: 0 3px 1px;
-    border: 2px solid transparent;
+    border: 2px solid black;
+    padding: 3px;
 }
 
 .menu-item:hover {
     border: 2px solid #FD6500;
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 14px;
 }
 
 h4 {
@@ -39,4 +52,3 @@ h4 {
 .highlighted-border {
     border: 1px solid #FD6500;
 }
-
